@@ -6,6 +6,8 @@
             <class name="TestCase1"></class>
             <class name="TestCase2"></class>
             <class name="TestCase5"></class>
+            <class name="TestCase12"></class>
+            <class name="TestCase13"></class>
 
         </classes>
     </test>

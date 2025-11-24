@@ -13,4 +13,14 @@ public class HomePage extends BasePage{
     public void BtnClick(){
         signLoginBtn.click();
     }
+
+    WebElement ProductsClickButton = driver.findElement(By.partialLinkText("Products"));
+    WebElement Viewproduct30 = driver.findElement(By.cssSelector("a[href=\"/product_details/30\"]"));
+
+    public void Productsbutton(){
+        ProductsClickButton.click();
+    }
+    public void ViewProduct30Button() {
+        Viewproduct30.click();
+    }
 }
