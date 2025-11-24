@@ -9,7 +9,7 @@ public class SignUpPage extends BasePage{
         super(driver);
     }
 
-    WebElement gender = driver.findElement(By.id("id_gender2"));
+    WebElement gender = driver.findElement(By.xpath("//*[@id=\"id_gender1\"]"));
     WebElement password = driver.findElement(By.id("password"));
     WebElement dayOfBirth = driver.findElement(By.id("days"));
     WebElement monthOfBirth = driver.findElement(By.id("months"));
@@ -27,6 +27,7 @@ public class SignUpPage extends BasePage{
     WebElement zipCode = driver.findElement(By.id("zipcode"));
     WebElement mobileNum = driver.findElement(By.id("mobile_number"));
     WebElement createAccountBtn = driver.findElement(By.xpath("//*[@id=\"form\"]/div[1]/div/div/div/form/button"));
+    WebElement continueBtn = driver.findElement(By.xpath("//*[@id=\"form\"]/div/div/div/div/a"));
 
     public void FillAll(){
 
@@ -48,7 +49,10 @@ public class SignUpPage extends BasePage{
         zipCode.sendKeys("123456");
         mobileNum.sendKeys("0120255664");
         createAccountBtn.click();
+
     }
 
-
+    public void continueBtn() {
+        continueBtn.click();
+    }
 }

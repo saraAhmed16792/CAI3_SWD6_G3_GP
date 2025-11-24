@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 
 import java.io.IOException;
 
-public class TestCase1 {
+public class TestCase5 {
     WebDriver driver;
     HomePage home;
     SignUpPage signUpPage;
@@ -22,7 +22,6 @@ public class TestCase1 {
         driver.manage().window().maximize();
         home = new HomePage(driver);
     }
-
     @Test(description = "Verify that home page is visible successfully", priority = 0)
     public void homePage() {
         String title = driver.getTitle();
@@ -33,31 +32,8 @@ public class TestCase1 {
     public void txtVisible() throws IOException {
         home.BtnClick();
         loginPage = new LoginPage(driver);
-        loginPage.getNewUser();
-        Assert.assertEquals(loginPage.getNewUser(), "New User Signup!");
         loginPage.signUpData();
-    }
-
-    @Test(description = "verify complete register", priority = 2)
-    public void completeRegister() {
-        home.BtnClick();
-        loginPage = new LoginPage(driver);
-        signUpPage = new SignUpPage(driver);
-        signUpPage.FillAll();
         String title = driver.getTitle();
-        Assert.assertEquals(title, "Automation Exercise - Account Created");
+        Assert.assertEquals(title,"Email Address already exist!");
     }
-
-    @Test(description = " Verify that 'Logged in as username' is visible", priority = 3)
-    public void checkUser() {
-        loginPage = new LoginPage(driver);
-        signUpPage = new SignUpPage(driver);
-        signUpPage =new SignUpPage(driver);
-        signUpPage.continueBtn();
-        String userName = driver.getTitle();
-        Assert.assertEquals(userName, " Logged in as Ahmed");
-
-    }
-
 }
-

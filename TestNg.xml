@@ -4,6 +4,8 @@
     <test name="Register user">
         <classes>
             <class name="TestCase1"></class>
+            <class name="TestCase2"></class>
+            <class name="TestCase5"></class>
 
         </classes>
     </test>
