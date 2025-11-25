@@ -6,6 +6,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import java.time.Duration;
+import java.util.List;
 
 
 public class ProductPage extends BasePage {
@@ -19,6 +20,14 @@ public class ProductPage extends BasePage {
 
     WebElement Product1 = driver.findElement(By.cssSelector("a[data-product-id=\"1\"]"));
     WebElement Product2 = driver.findElement(By.cssSelector("a[data-product-id=\"2\"]"));
+    public WebElement All_Products_Header = driver.findElement(By.xpath("/html/body/section[2]/div/div/div[2]/div/h2"));
+    public WebElement View_Product_Button = driver.findElement(By.xpath("/html/body/section[2]/div/div/div[2]/div/div[2]/div/div[2]/ul/li/a"));
+    public WebElement Search_Box = driver.findElement(By.id("search_product"));
+    public WebElement Search_Button = driver.findElement(By.xpath("//*[@id=\"submit_search\"]/i"));
+
+    public List<WebElement> getAllProductsList() {
+        return driver.findElements(By.xpath("//div[@class='product-image-wrapper']"));
+    }
 
 
     public void Addproduct1(){
@@ -45,5 +54,11 @@ public class ProductPage extends BasePage {
     }
     public int Cartquantit(){
         return driver.findElements(By.cssSelector("tbody tr")).size();
+    }
+    public int getProductsCount() {
+        return getAllProductsList().size();
+    }
+    public void View_Product_click(){
+        View_Product_Button.click();
     }
 }

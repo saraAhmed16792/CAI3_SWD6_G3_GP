@@ -4,6 +4,7 @@ import Pages.SignUpPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -57,6 +58,10 @@ public class TestCase1 {
         String userName = driver.getTitle();
         Assert.assertEquals(userName, " Logged in as Ahmed");
 
+    }
+    @AfterTest
+    public void close(){
+        driver.close();
     }
 
 }

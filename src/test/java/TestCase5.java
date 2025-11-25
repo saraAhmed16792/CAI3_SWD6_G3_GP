@@ -4,6 +4,7 @@ import Pages.SignUpPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -35,5 +36,9 @@ public class TestCase5 {
         loginPage.signUpData();
         String title = driver.getTitle();
         Assert.assertEquals(title,"Email Address already exist!");
+    }
+    @AfterTest
+    public void close(){
+        driver.close();
     }
 }
