@@ -3,52 +3,47 @@
 <suite name="automation exercise">
     <test name="Register user">
         <classes>
-            <class name="TestCase1"></class>
+            <class name="TestCase1"/>
         </classes>
     </test>
     <test name="Login User with correct email and password">
         <classes>
-            <class name="TestCase2"></class>
+            <class name="TestCase2"/>
         </classes>
     </test>
     <test name="Register User with existing email">
         <classes>
-            <class name="TestCase5"></class>
+            <class name="TestCase5"/>
         </classes>
-    </test>
-    <test name="Verify All Products and product detail page">
-        <classes>
-            <class name="Test_Case8"></class>
-        </classes>
-    </test>
-    <test name="Search Product">
-        <classes>
-            <class name="Test_Case9"></class>
-        </classes>
-    </test>
-    <test name="Add Products in Cart">
-        <classes>
-            <class name="TestCase12"></class>
-        </classes>
-    </test>
-    <test name="Verify Product quantity in Cart">
-        <classes>
-            <class name="TestCase13"></class>
-        </classes>
-    </test>
     </test>
     <test name="Contact Us Form">
         <classes>
             <class name="case6"></class>
         </classes>
     </test>
-     </test>
     <test name="Verify Test Cases Page">
         <classes>
             <class name="case7"></class>
         </classes>
     </test>
-    
-
-
+    <test name="Verify All Products and product detail page">
+        <classes>
+            <class name="Test_Case8"/>
+        </classes>
+    </test>
+    <test name="Search Product">
+        <classes>
+            <class name="Test_Case9"/>
+        </classes>
+    </test>
+    <test name="Add Products in Cart">
+        <classes>
+            <class name="TestCase12"/>
+        </classes>
+    </test>
+    <test name="Verify Product quantity in Cart">
+        <classes>
+            <class name="TestCase13"/>
+        </classes>
+    </test>
 </suite>
