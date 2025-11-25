@@ -36,6 +36,11 @@
             <class name="Test_Case9"/>
         </classes>
     </test>
+    <test name="Verify Subscription in home page">
+        <classes>
+            <class name="Test_Case10"/>
+        </classes>
+    </test>
     <test name="Add Products in Cart">
         <classes>
             <class name="TestCase12"/>
