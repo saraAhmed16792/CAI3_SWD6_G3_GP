@@ -36,6 +36,19 @@
             <class name="TestCase13"></class>
         </classes>
     </test>
+    </test>
+    <test name="Contact Us Form">
+        <classes>
+            <class name="case6"></class>
+        </classes>
+    </test>
+     </test>
+    <test name="Verify Test Cases Page">
+        <classes>
+            <class name="case7"></class>
+        </classes>
+    </test>
+    
 
 
 </suite>
