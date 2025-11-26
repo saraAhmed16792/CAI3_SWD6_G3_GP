@@ -11,6 +11,16 @@
             <class name="TestCase2"/>
         </classes>
     </test>
+    <test name="Login User with incorrect email and password">
+        <classes>
+            <class name="TestCase3"/>
+        </classes>
+    </test>
+    <test name="Logout User">
+        <classes>
+            <class name="TestCase4"/>
+        </classes>
+    </test>
     <test name="Register User with existing email">
         <classes>
             <class name="TestCase5"/>

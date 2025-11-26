@@ -32,7 +32,7 @@ public class TestCase1 {
 
     @Test(description = " Verify 'New User Signup!' is visible", priority = 1)
     public void txtVisible() throws IOException {
-        home.BtnClick();
+        home.signLoginBtnClick();
         loginPage = new LoginPage(driver);
         loginPage.getNewUser();
         Assert.assertEquals(loginPage.getNewUser(), "New User Signup!");
@@ -41,7 +41,7 @@ public class TestCase1 {
 
     @Test(description = "verify complete register", priority = 2)
     public void completeRegister() {
-        home.BtnClick();
+        home.signLoginBtnClick();
         loginPage = new LoginPage(driver);
         signUpPage = new SignUpPage(driver);
         signUpPage.FillAll();

@@ -11,7 +11,7 @@ public class HomePage extends BasePage{
         super(driver);
     }
     WebElement signLoginBtn = driver.findElement(By.partialLinkText("Login"));
-    public void BtnClick(){
+    public void signLoginBtnClick(){
         signLoginBtn.click();
     }
 

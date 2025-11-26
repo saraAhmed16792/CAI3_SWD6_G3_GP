@@ -31,7 +31,7 @@ public class TestCase5 {
 
     @Test(description = " Verify 'New User Signup!' is visible", priority = 1)
     public void txtVisible() throws IOException {
-        home.BtnClick();
+        home.signLoginBtnClick();
         loginPage = new LoginPage(driver);
         loginPage.signUpData();
         String title = driver.getTitle();

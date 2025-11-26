@@ -30,7 +30,7 @@ public class TestCase2 {
     }
     @Test(description = "Verify 'Login to your account' is visible", priority = 1)
     public void loginPage(){
-        home.BtnClick();
+        home.signLoginBtnClick();
         loginPage = new LoginPage(driver);
         loginPage.getLoginToAccount();
         Assert.assertEquals(loginPage.getLoginToAccount(),"Login to your account");
